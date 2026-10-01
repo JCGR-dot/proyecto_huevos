@@ -1,0 +1,27 @@
+# --- Secretos ---
+*.pem
+.env
+.env.*
+
+# --- Backend (Python) ---
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+backend/servidor.log
+
+# Pesos del modelo (pesan mucho; súbelos aparte o con Git LFS si los necesitas versionados)
+backend/modelo/*.keras
+backend/modelo/config_banda.json
+
+# --- App móvil (Expo / React Native) ---
+mobile-app-nuevo/node_modules/
+mobile-app-nuevo/.expo/
+mobile-app-nuevo/dist/
+mobile-app-nuevo/web-build/
+*.log
+npm-debug.*
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db

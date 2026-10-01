@@ -1,0 +1,37 @@
+{
+  "class_names": [
+    "Crack",
+    "Fertile",
+    "Infertile"
+  ],
+  "img_size": 128,
+  "t_crack": 0.9,
+  "conf_min": 0.8,
+  "ruta_por_clase": {
+    "Crack": "Descarte",
+    "Fertile": "Incubadora",
+    "Infertile": "Consumo"
+  },
+  "costos": {
+    "Descarte": {
+      "crack": 0.0,
+      "fertile": 3.0,
+      "infertile": 1.0
+    },
+    "Incubadora": {
+      "crack": 8.0,
+      "fertile": 0.0,
+      "infertile": 4.0
+    },
+    "Consumo": {
+      "crack": 10.0,
+      "fertile": 2.0,
+      "infertile": 0.0
+    },
+    "Revisión manual": {
+      "crack": 0.5,
+      "fertile": 0.5,
+      "infertile": 0.5
+    }
+  }
+}
